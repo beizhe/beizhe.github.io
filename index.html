@@ -186,7 +186,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-07-08 18:21:03" itemprop="dateModified" datetime="2026-07-08T18:21:03+08:00">2026-07-08</time>
+                <time title="修改时间：2026-07-08 18:32:37" itemprop="dateModified" datetime="2026-07-08T18:32:37+08:00">2026-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,13 +222,6 @@
 
       
           <h3 id="自动化与性能测试整体架构图（Nginx-Jenkins-Selenium-Locust）"><a href="#自动化与性能测试整体架构图（Nginx-Jenkins-Selenium-Locust）" class="headerlink" title="自动化与性能测试整体架构图（Nginx + Jenkins + Selenium + Locust）"></a>自动化与性能测试整体架构图（Nginx + Jenkins + Selenium + Locust）</h3><img src="/images/若依/5.png"  />
-
-<h3 id="分布式中间件部署（Redis-缓存与-RabbitMQ-队列配置）"><a href="#分布式中间件部署（Redis-缓存与-RabbitMQ-队列配置）" class="headerlink" title="分布式中间件部署（Redis 缓存与 RabbitMQ 队列配置）"></a>分布式中间件部署（Redis 缓存与 RabbitMQ 队列配置）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/redis/redis.conf   </span><br><span class="line"></span><br><span class="line">supervised no 改为 supervised systemd     <span class="comment">#允许系统托管</span></span><br><span class="line">requirepass 密码    <span class="comment">#去掉前面的 注释，设置密码，生产环境必做）</span></span><br><span class="line"><span class="built_in">bind</span> 127.0.0.1 改成 <span class="built_in">bind</span> 0.0.0.0         <span class="comment">#公网连接</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#开机自启</span></span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> rabbitmq-server</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> redis-server</span><br></pre></td></tr></table></figure>
-
-<h3 id="UI-自动化测试框架二次开发（Java-TestNG-Selenium）"><a href="#UI-自动化测试框架二次开发（Java-TestNG-Selenium）" class="headerlink" title="UI 自动化测试框架二次开发（Java + TestNG + Selenium）"></a>UI 自动化测试框架二次开发（Java + TestNG + Selenium）</h3><h4 id="基于-Page-Object-Model-POM-的若依系统页面封装"><a href="#基于-Page-Object-Model-POM-的若依系统页面封装" class="headerlink" title="基于 Page Object Model (POM) 的若依系统页面封装"></a>基于 Page Object Model (POM) 的若依系统页面封装</h4><p>Selenium：Page Object 框架二次封装(显式等待，断言失败自动截图上传，日志记录组件)【POM】</p>
-<p>TestNG：参数化测试、并发执行、依赖测试</p>
-<p>AI辅助工具：Copilot Chat、cursor</p>
-<img src="/images/若依/1.png"  />
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2026/06/06/%E8%8B%A5%E4%BE%9D/#more" rel="contents">
@@ -286,7 +279,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-07-08 18:21:03" itemprop="dateModified" datetime="2026-07-08T18:21:03+08:00">2026-07-08</time>
+                <time title="修改时间：2026-07-08 18:32:37" itemprop="dateModified" datetime="2026-07-08T18:32:37+08:00">2026-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -380,7 +373,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-07-08 18:21:03" itemprop="dateModified" datetime="2026-07-08T18:21:03+08:00">2026-07-08</time>
+                <time title="修改时间：2026-07-08 18:32:37" itemprop="dateModified" datetime="2026-07-08T18:32:37+08:00">2026-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -418,8 +411,6 @@
           <p>你们坐在一起，随便谈谈。你可以言说真实的你，而这就是心理咨询的奇迹所在。</p>
 <p>没有什么比从痛苦中解脱更令人向往了，也没有什么比丢开依赖更让人害怕了。</p>
 <p>只有当人们意识到自己有能力，且必须靠自己的能力去构建生活，他们才能放手去改变。 </p>
-<p>痛和痛苦是有区别的。你会感觉到痛，每个人都会有感觉到痛的时候，但你不必让自己那么痛苦，感到痛不是出于你的选择，但你选择了让自己痛苦。</p>
-<p>既然我如此紧抓着痛苦不放，那我一定是从中得到了什么。痛苦对我来说一定是有其意义所在的。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2026/05/22/%E6%88%96%E8%AE%B8%E4%BD%A0%E8%AF%A5%E6%89%BE%E4%B8%AA%E4%BA%BA%E8%81%8A%E8%81%8A/#more" rel="contents">
@@ -477,7 +468,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-07-08 18:21:03" itemprop="dateModified" datetime="2026-07-08T18:21:03+08:00">2026-07-08</time>
+                <time title="修改时间：2026-07-08 18:32:37" itemprop="dateModified" datetime="2026-07-08T18:32:37+08:00">2026-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -577,7 +568,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-07-08 18:21:03" itemprop="dateModified" datetime="2026-07-08T18:21:03+08:00">2026-07-08</time>
+                <time title="修改时间：2026-07-08 18:32:37" itemprop="dateModified" datetime="2026-07-08T18:32:37+08:00">2026-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
