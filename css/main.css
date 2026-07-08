@@ -813,43 +813,43 @@ pre .javascript .function {
 .pagination .next,
 .pagination .page-number,
 .pagination .space {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 0 11px;
-  position: relative;
-  top: -1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  margin: 0 4px;
+  padding: 0 6px;
+  border-radius: 50%;
+  color: #555;
+  transition-property: background, color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 @media (max-width: 767px) {
   .pagination .prev,
   .pagination .next,
   .pagination .page-number,
   .pagination .space {
-    margin: 0 5px;
+    margin: 0 3px;
+    min-width: 30px;
+    height: 30px;
   }
 }
 .pagination {
-  border-top: 1px solid #eee;
-  margin: 120px 0 0;
+  margin: 60px 0 0;
   text-align: center;
-}
-.pagination .prev,
-.pagination .next,
-.pagination .page-number {
-  border-bottom: 0;
-  border-top: 1px solid #eee;
-  transition-property: border-color;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #222;
+  background: #f5f5f5;
+  color: #555;
 }
 .pagination .space {
-  margin: 0;
-  padding: 0;
+  min-width: auto;
+  color: #555;
 }
 .pagination .prev {
   margin-left: 0;
@@ -859,26 +859,11 @@ pre .javascript .function {
 }
 .pagination .page-number.current {
   background: #ccc;
-  border-top-color: #ccc;
   color: #fff;
 }
-@media (max-width: 767px) {
-  .pagination {
-    border-top: none;
-  }
-  .pagination .prev,
-  .pagination .next,
-  .pagination .page-number {
-    border-bottom: 1px solid #eee;
-    border-top: 0;
-    margin-bottom: 10px;
-    padding: 0 10px;
-  }
-  .pagination .prev:hover,
-  .pagination .next:hover,
-  .pagination .page-number:hover {
-    border-bottom-color: #222;
-  }
+.pagination .page-number.current:hover {
+  background: #ccc;
+  color: #fff;
 }
 .comments {
   margin-top: 60px;
@@ -1173,7 +1158,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b64f4e;
+  background: #ffb3c2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2168,8 +2153,8 @@ ul.breadcrumb li + li:last-child {
 }
 .header-inner {
   background: var(--content-bg-color);
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.1);
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -2201,8 +2186,8 @@ ul.breadcrumb li + li:last-child {
 }
 .content-wrap {
   background: var(--content-bg-color);
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.1);
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 252px);
@@ -2359,8 +2344,8 @@ ul.breadcrumb li + li:last-child {
 }
 .sidebar-inner {
   background: var(--content-bg-color);
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
   box-sizing: border-box;
   color: var(--text-color);
   width: 240px;
@@ -2451,19 +2436,19 @@ ul.breadcrumb li + li:last-child {
 }
 .post-block {
   background: var(--content-bg-color);
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.1);
   padding: 40px;
 }
 .post-block + .post-block {
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
   margin-top: 12px;
 }
 .comments {
   background: var(--content-bg-color);
-  border-radius: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
   margin-top: 12px;
   padding: 40px;
 }
@@ -2478,9 +2463,9 @@ ul.breadcrumb li + li:last-child {
 }
 .pagination {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 8px;
   border-top: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
   margin: 12px 0 0;
   padding: 10px 0 10px;
 }
@@ -2498,10 +2483,10 @@ ul.breadcrumb li + li:last-child {
 }
 .sub-menu {
   border-bottom: initial;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.1);
 }
 .sub-menu + .content .post-block {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
   margin-top: 12px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2529,8 +2514,8 @@ ul.breadcrumb li + li:last-child {
     margin-top: 20px;
   }
   .post-block {
-    border-radius: initial;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+    border-radius: 8px;
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
     padding: 20px;
   }
   .post-block + .post-block {
@@ -2552,8 +2537,8 @@ ul.breadcrumb li + li:last-child {
     margin: 12px 0;
   }
   .post-block {
-    border-radius: initial;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+    border-radius: 8px;
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
     min-height: auto;
     padding: 12px;
   }
